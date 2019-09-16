@@ -1,12 +1,4 @@
 <h1 style="text-align: center">CODING SYSTEM</h1>
-<div style="text-align: center">
-
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/elunez/coding/blob/master/LICENSE)
-[![star](https://gitee.com/elunez/coding/badge/star.svg?theme=white)](https://gitee.com/elunez/coding)
-[![GitHub stars](https://img.shields.io/github/stars/elunez/coding.svg?style=social&label=Stars)](https://github.com/elunez/coding)
-[![GitHub forks](https://img.shields.io/github/forks/elunez/coding.svg?style=social&label=Fork)](https://github.com/elunez/coding)
-
-</div>
 
 #### 项目简介
 coding基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前后端分离的后台管理系统， 权限控制的方式为RBAC，项目支持数据字典与数据权限管理，支持一键生成前后端代码，支持前端菜单动态路由
