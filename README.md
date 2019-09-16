@@ -1,28 +1,19 @@
-<h1 style="text-align: center">el-admin 后台管理系统</h1>
+<h1 style="text-align: center">CODING SYSTEM</h1>
 <div style="text-align: center">
 
-[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/elunez/eladmin/blob/master/LICENSE)
-[![star](https://gitee.com/elunez/eladmin/badge/star.svg?theme=white)](https://gitee.com/elunez/eladmin)
-[![GitHub stars](https://img.shields.io/github/stars/elunez/eladmin.svg?style=social&label=Stars)](https://github.com/elunez/eladmin)
-[![GitHub forks](https://img.shields.io/github/forks/elunez/eladmin.svg?style=social&label=Fork)](https://github.com/elunez/eladmin)
+[![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/elunez/coding/blob/master/LICENSE)
+[![star](https://gitee.com/elunez/coding/badge/star.svg?theme=white)](https://gitee.com/elunez/coding)
+[![GitHub stars](https://img.shields.io/github/stars/elunez/coding.svg?style=social&label=Stars)](https://github.com/elunez/coding)
+[![GitHub forks](https://img.shields.io/github/forks/elunez/coding.svg?style=social&label=Fork)](https://github.com/elunez/coding)
 
 </div>
 
 #### 项目简介
-eladmin基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前后端分离的后台管理系统， 权限控制的方式为RBAC，项目支持数据字典与数据权限管理，支持一键生成前后端代码，支持前端菜单动态路由
+coding基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前后端分离的后台管理系统， 权限控制的方式为RBAC，项目支持数据字典与数据权限管理，支持一键生成前后端代码，支持前端菜单动态路由
 
 **开发文档**  [https://docs.auauz.net/](https://docs.auauz.net)
 
-**体验地址**  [https://auauz.net/](https://auauz.net/)
-
 **账号密码** ```admin/123456```(默认密码都是123456)
-
-#### 项目源码
-
-|     |   后端源码  |   前端源码  |
-|---  |--- | --- |
-|  github   |  https://github.com/elunez/eladmin   |  https://github.com/elunez/eladmin-qd   |
-|  码云   |  https://gitee.com/elunez/eladmin   |  https://gitee.com/elunez/eladmin-qt   |
 
 ####  系统功能
 - 用户管理：提供用户的相关配置，新增用户后，默认密码为123456
@@ -45,18 +36,18 @@ eladmin基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前�
 
 #### 项目结构
 项目采用分模块开发方式，将通用的配置放在公共模块，```system```模块为系统核心模块也是项目入口模块，```logging``` 模块为系统的日志模块，```tools``` 为第三方工具模块，包含了图床、邮件、七牛云、支付宝，```generator``` 为系统的代码生成模块
-- eladmin-common 公共模块
+- coding-common 公共模块
     - exception 项目统一异常的处理
     - mapper mapstruct的通用mapper
     - redis redis缓存相关配置
     - swagger2 接口文档配置
     - utils 系统通用工具类
-- eladmin-system 系统核心模块（系统启动入口）
+- coding-system 系统核心模块（系统启动入口）
 	- config 配置跨域与静态资源，与数据权限
 	- modules 系统相关模块(登录授权、定时任务等)
-- eladmin-logging 系统日志模块
-- eladmin-tools 系统第三方工具模块
-- eladmin-generator 系统代码生成模块
+- coding-logging 系统日志模块
+- coding-tools 系统第三方工具模块
+- coding-generator 系统代码生成模块
 
 #### 系统预览
 <table>
@@ -77,7 +68,3 @@ eladmin基于 Spring Boot 2.1.0 、 Jpa、 Spring Security、redis、Vue的前�
     </tr>
 </table>
 
-#### 项目捐赠
-如果你用爽了，可以请作者喝杯咖啡表示支持 ☕️！ [Donate](https://docs.auauz.net/#/jz)
-#### 反馈交流
-- QQ交流群：891137268

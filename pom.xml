@@ -4,17 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.zhengjie</groupId>
-    <artifactId>eladmin</artifactId>
+    <groupId>me.zhangrui</groupId>
+    <artifactId>coding</artifactId>
     <packaging>pom</packaging>
     <version>2.1</version>
 
     <modules>
-        <module>eladmin-common</module>
-        <module>eladmin-logging</module>
-        <module>eladmin-system</module>
-        <module>eladmin-tools</module>
-        <module>eladmin-generator</module>
+        <module>coding-common</module>
+        <module>coding-logging</module>
+        <module>coding-system</module>
+        <module>coding-tools</module>
+        <module>coding-generator</module>
     </modules>
 
     <name>el-admin</name>
