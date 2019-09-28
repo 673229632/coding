@@ -65,8 +65,12 @@ public class Menu implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Menu menu = (Menu) o;
         return Objects.equals(id, menu.id);
     }

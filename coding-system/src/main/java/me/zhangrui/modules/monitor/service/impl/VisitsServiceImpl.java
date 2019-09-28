@@ -79,7 +79,7 @@ public class VisitsServiceImpl implements VisitsService {
     public Object getChartData() {
         Map map = new HashMap();
         LocalDate localDate = LocalDate.now();
-        List<Visits> list = visitsRepository.findAllVisits(localDate.minusDays(6).toString(),localDate.plusDays(1).toString());
+        List<Visits> list = visitsRepository.findAllVisits(localDate.minusDays(29).toString(),localDate.plusDays(1).toString());
         map.put("dates",list.stream().map(Visits::getDate).collect(Collectors.toList()));
         map.put("weekDays",list.stream().map(Visits::getWeekDay).collect(Collectors.toList()));
         map.put("visitsData",list.stream().map(Visits::getPvCounts).collect(Collectors.toList()));

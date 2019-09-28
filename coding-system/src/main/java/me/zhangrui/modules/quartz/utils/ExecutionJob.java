@@ -6,14 +6,14 @@ import me.zhangrui.modules.quartz.repository.QuartzLogRepository;
 import me.zhangrui.modules.quartz.service.QuartzJobService;
 import me.zhangrui.utils.SpringContextHolder;
 import me.zhangrui.utils.ThrowableUtil;
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.quartz.JobExecutionContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.quartz.QuartzJobBean;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+
+import java.util.concurrent.*;
 
 /**
  * 参考人人开源，https://gitee.com/renrenio/renren-security
@@ -25,7 +25,9 @@ public class ExecutionJob extends QuartzJobBean {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private ExecutorService executorService = Executors.newSingleThreadExecutor();
+    // private ExecutorService executorService = Executors.newSingleThreadExecutor();
+    ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1,
+            new BasicThreadFactory.Builder().build());
 
     @Override
     protected void executeInternal(JobExecutionContext context) {

@@ -73,10 +73,11 @@ public class DeptServiceImpl implements DeptService {
                     deptDTO.getChildren().add(it);
                 }
             }
-            if(isChild)
+            if(isChild) {
                 depts.add(deptDTO);
-            else if(!deptNames.contains(deptRepository.findNameById(deptDTO.getPid())))
+            } else if(!deptNames.contains(deptRepository.findNameById(deptDTO.getPid()))) {
                 depts.add(deptDTO);
+            }
         }
 
         if (CollectionUtils.isEmpty(trees)) {
